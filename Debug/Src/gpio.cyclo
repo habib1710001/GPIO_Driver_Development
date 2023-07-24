@@ -1,0 +1,4 @@
+gpio.c:5:6:gpio_init	1
+gpio.c:9:6:gpio_mode	1
+gpio.c:16:6:gpio_state	1
+gpio.c:20:6:gpio_speed	1
