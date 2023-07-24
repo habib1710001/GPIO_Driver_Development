@@ -90,12 +90,17 @@ typedef struct{
 #define GPIOGEN (1U << 6)
 #define GPIOHEN (1U << 7)
 
+
+//Essential Macro
+#define OUTPUT 1
+#define INPUT  0
+
 //function prototypes
 void gpio_init(uint32_t GPIOxEN);
-void gpio_mode(gpioTypeDef * gpioPointer , uint8_t * pinNo);
+void gpio_mode(gpioTypeDef * gpioPointer , uint8_t pinNo, uint8_t mode);
+uint8_t gpio_input(gpioTypeDef * gpioPointer , uint8_t pinNo);
 void gpio_state(void);
 void gpio_speed(void);
-
 
 
 
